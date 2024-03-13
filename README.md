@@ -4,6 +4,13 @@
 Cluster level LLM training and inference performance experiements. Both LLM training and inference are critical and expansive. Here are some interesting 
 experiments and results.
 
+For tutorial on LLM training and inference infrastructure, one may refere to 
+[my LLM Infrastructure](https://github.com/project-ai101/llm-infra/tree/main) reposity.
+
+For tutorial on low level AI HPC computation with CUDA, one my refere to 
+[my AI HPC with CUDA](https://github.com/project-ai101/ai-hpc-with-cuda)
+repository.
+
 ### Design 1: Llama 2 Inference Performance with Three Low Cost GPUs over Three Linux Nodes
 ##### -- Test 1.1
 ```
