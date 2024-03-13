@@ -2,7 +2,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Author: Bin Tan
 
 Both LLM training and inference are critical and expansive. The LLM Performance over HPC clusters is important. Here are some interesting 
-experiment and results.
+experiments and results.
 
 ### Llama 2 Inference Performance with Three Low Cost GPUs over Three Linux Nodes
 ```
