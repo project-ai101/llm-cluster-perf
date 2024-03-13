@@ -1,7 +1,7 @@
-# llm-perf
+# llm-cluster-perf
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Author: Bin Tan
 
-Both LLM training and inference are critical and expansive. The LLM Performance over AI HPC clusters is important. Here are some interesting 
+Cluster level LLM training and inference performance experiements. Both LLM training and inference are critical and expansive. Here are some interesting 
 experiments and results.
 
 ### Design 1: Llama 2 Inference Performance with Three Low Cost GPUs over Three Linux Nodes
