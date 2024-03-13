@@ -1,7 +1,7 @@
 # llm-perf
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Author: Bin Tan
 
-Both LLM training and inference are critical and expansive. The LLM Performance over HPC clusters is important. Here are some interesting 
+Both LLM training and inference are critical and expansive. The LLM Performance over AI HPC clusters is important. Here are some interesting 
 experiments and results.
 
 ### Llama 2 Inference Performance with Three Low Cost GPUs over Three Linux Nodes
@@ -11,7 +11,7 @@ experiments and results.
 ```
 
 ```
-   Setup: 
+   AI HPC Cluster Configuration: 
      Three Nvidia RTX 3060 GPU cards. Each card has only 12GB onboard DRAM and is installed
      on a separate Linux box. Three Linux boxes are connected by an Ethernet switch.
 ```
