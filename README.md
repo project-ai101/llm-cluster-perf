@@ -7,7 +7,7 @@ experiments and results.
 For tutorial on LLM training and inference infrastructure, one may refere to 
 [my LLM Infrastructure](https://github.com/project-ai101/llm-infra/tree/main) reposity.
 
-For tutorial on low level AI HPC computation with CUDA, one my refere to 
+For tutorial on low level AI HPC computation with CUDA, one may refere to 
 [my AI HPC with CUDA](https://github.com/project-ai101/ai-hpc-with-cuda)
 repository.
 
