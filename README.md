@@ -45,4 +45,19 @@ repository.
      4. Need to explore the cluster performance scalability with respect to the individual
         GPU computation capacity.
 ```
+##### -- Test 1.2
+When launch a request with a large batch size, out of memory issues occurred in the GPU cards. A simple
+trick for Llama 2 model is to configure the maximum sequence length to be small and meanwhile reduce the maximum 
+generation length. Then, run with batch size from 1 to 8. The token generation output of a Llama-2 13B model
+demonstrated a linear scalability in the configuration. Here is the data
 
+| Batch Size | Token Throughput (tokens/second) |
+|------------|----------------------------------|
+|      1     |          7.5                     |
+|      2     |         15.7                     |
+|      3     |         22.8                     |
+|      4     |         30.1                     |
+|      5     |         39.0                     |
+|      6     |         47.5                     |
+|      7     |         53.5                     |
+|      8     |         62.1                     |
