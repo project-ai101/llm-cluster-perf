@@ -103,6 +103,6 @@ following Test 2.1
         node introdues additional communication cost.
      3. For large size batches like 16 and 20, the computation time plays dominate role while the communication cost is
         almost fixed. Therefore, the throughput increases a lot.
-     4. Any further throughput improvement?
+     4. Any further throughput improvement without increasing cost?
 
 ```
