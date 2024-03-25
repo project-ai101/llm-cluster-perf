@@ -63,7 +63,7 @@ demonstrated a linear scalability in the configuration. Here is the data
 |      8     |         62.1                     |
 
 
-### Design 2: Llama 2 Inference Performance with Four Low Cost GPUs over Three Linux Nodes
+### Design 2: Llama 2 Inference Performance with Four Low Cost GPUs over Four Linux Nodes
 As experienced in Design 1 above, the GPU VRAM is a bottleneck for a large batch size. This is a quite well known issues.
 One solution is scale-up the GPU card with large size VRAM, such as Nvidia H100. But it is very expensive and even hard to 
 buy one from manufactures or rent one from cloud providers. Then, the second solutino is scale-out, which I use here. 
