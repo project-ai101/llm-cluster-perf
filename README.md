@@ -61,3 +61,48 @@ demonstrated a linear scalability in the configuration. Here is the data
 |      6     |         47.5                     |
 |      7     |         53.5                     |
 |      8     |         62.1                     |
+
+
+### Design 2: Llama 2 Inference Performance with Four Low Cost GPUs over Three Linux Nodes
+As experienced in Design 1 above, the GPU VRAM is a bottleneck for a large batch size. This is a quite well known issues.
+One solution is scale-up the GPU card with large size VRAM, such as Nvidia H100. But it is very expensive and even hard to 
+buy one from manufactures or rent one from cloud providers. Then, the second solutino is scale-out, which I use here. 
+The cluster I have does demonstrate a very good scalability. By adding one node with one RTX 3060, both computation capacity
+and GPU VRAM memory size increase 33.33%. Now, we 48GB GPU VRAM. Then, a few large size batches had been performed in the
+following Test 2.1
+
+##### -- Test 2.1
+```
+   Timestamp:
+      March 25, 2024
+```
+
+```
+   AI HPC Cluster Configuration: 
+     Four Nvidia RTX 3060 GPU cards. Each card has only 12GB onboard DRAM and is installed
+     on a separate Linux box. Four Linux boxes are connected by an Ethernet switch.
+```
+
+```
+   Total GPU Cost: < $1200
+```
+```
+   Performance Results:
+```
+| Batch Size | Token Throughput (tokens/second) |
+|------------|----------------------------------|
+|      12    |         51.82                    |
+|      16    |         85.66                    |
+|      20    |         92.63                    |
+
+```
+   Analysis:
+     1. The total performance increasing is (92.63 - 62.1) / 62.1 = 30.53 / 62.1 = 49.16%. With 33.33% cost increasing by
+        adding addtional node with one RTX 3060, we have 49.16% throughput increaseing. A good deal!
+     2. With batch size 12, the total output is even smaller than batch size 8 in the Three GPUs cluster in Design 1. Additional
+        node introdues additional communication cost.
+     3. For large size batches like 16 and 20, the computation time plays dominate role while the communication cost is
+        almost fixed. Therefore, the throughput increases a lot.
+     4. Any further throughput improvement?
+
+```
