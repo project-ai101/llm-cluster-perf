@@ -126,7 +126,7 @@ following Test 2.1
 ```
    Performance Results:
 ```
-Managed to be able to run batch size of 24. The performance increased 28.8% with respect batch size 20.
+Managed to be able to run batch size of 24. The performance increased 28.8% with respect to batch size 20 in test 2.1.
 
 | Batch Size | Token Throughput (tokens/second) |
 |------------|----------------------------------|
