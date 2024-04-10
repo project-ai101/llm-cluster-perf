@@ -106,3 +106,29 @@ following Test 2.1
      4. Any further throughput improvement without increasing cost?
 
 ```
+
+
+##### -- Test 2.2
+```
+   Timestamp:
+      April 10, 2024
+```
+
+```
+   AI HPC Cluster Configuration (the same as in Test 2.1 above): 
+     Four Nvidia RTX 3060 GPU cards. Each card has only 12GB onboard DRAM and is installed
+     on a separate Linux box. Four Linux boxes are connected by an Ethernet switch.
+```
+
+```
+   Total GPU Cost: < $1200
+```
+```
+   Performance Results:
+```
+Managed to be able to run batch size of 24. The performance increased 28.8% with respect batch size 20.
+
+| Batch Size | Token Throughput (tokens/second) |
+|------------|----------------------------------|
+|      24    |         119.31                   |
+
