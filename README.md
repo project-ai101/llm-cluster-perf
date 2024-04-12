@@ -132,3 +132,28 @@ Managed to be able to run batch size of 24. The performance increased 28.8% with
 |------------|----------------------------------|
 |      24    |         119.31                   |
 
+##### -- Test 2.3
+```
+   Timestamp:
+      April 12, 2024
+```
+
+```
+   AI HPC Cluster Configuration (the same as in Test 2.1 above): 
+     Four Nvidia RTX 3060 GPU cards. Each card has only 12GB onboard DRAM and is installed
+     on a separate Linux box. Four Linux boxes are connected by an Ethernet switch.
+```
+
+```
+   Total GPU Cost: < $1200
+```
+```
+   Performance Results:
+```
+Now, the same HPC cluster configuration can run 32 batch size whith 189.44 tokens/second throughput. 
+The performance increased (189.44 - 119.31) / 119.31 = 58.8% with respect to batch size 24 in test 2.2.
+
+| Batch Size | Token Throughput (tokens/second) |
+|------------|----------------------------------|
+|      32    |         189.44                   |
+
