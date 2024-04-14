@@ -157,3 +157,39 @@ The performance increased (189.44 - 119.31) / 119.31 = 58.8% with respect to bat
 |------------|----------------------------------|
 |      32    |         189.44                   |
 
+##### -- Test 2.4
+```
+   Timestamp:
+      April 12, 2024
+```
+
+```
+   AI HPC Cluster Configuration (the same as in Test 2.1 above): 
+     Four Nvidia RTX 3060 GPU cards. Each card has only 12GB onboard DRAM and is installed
+     on a separate Linux box. Four Linux boxes are connected by an Ethernet switch.
+```
+
+```
+   Total GPU Cost: < $1200
+```
+```
+   Performance Analysis and Results:
+```
+As we experienced before, one method to increase the throughput is to increase the batch size. However, the batch size is
+limitted by the GPU VRAM size. For the configuration, finally managed to run a test with a batch size of 48. And the result
+is 
+| Batch Size | Token Throughput (tokens/second) |
+|------------|----------------------------------|
+|      48    |         209.76                   |
+
+The percentage of the batch size increaseing is (48 - 32) / 32 = 50% but the overall throughput is just increased by
+(209.76 - 189.44) / 189.44 = 10.72%. This indicates that we hit on some either hardware bottleneck or software implementation
+bottleneck.
+
+One may question why don't we use a single GPU card with large VRAM. The main reason is the cost. A single GPU card with 
+VRAM size 40GB or bigger normaly costs more than $4K. 
+
+From Test 2.1 to Test 2.4, the total throughput has been increased from 7.5 tokens/second with batch size 1 for to Llama 2 13B model to
+209.76 tokens/second with batch size 48
+
+
