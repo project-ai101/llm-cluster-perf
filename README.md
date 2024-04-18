@@ -192,4 +192,37 @@ VRAM size 40GB or bigger normaly costs more than $4K.
 From Test 2.1 to Test 2.4, the total throughput has been increased from 7.5 tokens/second with batch size 1 for to Llama 2 13B model to
 209.76 tokens/second with batch size 48
 
+##### -- Test 2.5
+```
+   Timestamp:
+      April 17, 2024
+```
 
+```
+   AI HPC Cluster Configuration (the same as in Test 2.1 above): 
+     Four Nvidia RTX 3060 GPU cards. Each card has only 12GB onboard DRAM and is installed
+     on a separate Linux box. Four Linux boxes are connected by an Ethernet switch.
+```
+
+```
+   Total GPU Cost: < $1200
+```
+```
+   Performance Results:
+```
+The difference in the prompt configuration are max_seq_len = 256 and max_gen_len = 220 instead of max_seq_len = 512 and max_gen_len = 256 
+above tests from Test 2.1 to Test 2.4. The results are
+
+-------------------------------------------------
+| Batch Size | Token Throughput (tokens/second) |
+|------------|----------------------------------|
+|      48    |         232.92                   |
+|------------|----------------------------------|
+|      64    |         335.36                   |
+|------------|----------------------------------|
+|      80    |         371.2                    |
+|------------|----------------------------------|
+|      96    |         386.4                    |
+-------------------------------------------------
+
+The performance improvement from patch size 80 to patch size 96 is small. The reason behind is that the GPU computation is saturated.
