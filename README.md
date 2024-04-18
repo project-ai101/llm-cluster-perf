@@ -92,8 +92,11 @@ following Test 2.1
 | Batch Size | Token Throughput (tokens/second) |
 |------------|----------------------------------|
 |      12    |         51.82                    |
+-------------------------------------------------
 |      16    |         85.66                    |
+-------------------------------------------------
 |      20    |         92.63                    |
+-------------------------------------------------
 
 ```
    Analysis:
@@ -213,16 +216,13 @@ From Test 2.1 to Test 2.4, the total throughput has been increased from 7.5 toke
 The difference in the prompt configuration are max_seq_len = 256 and max_gen_len = 220 instead of max_seq_len = 512 and max_gen_len = 256 
 above tests from Test 2.1 to Test 2.4. The results are
 
--------------------------------------------------
+
 | Batch Size | Token Throughput (tokens/second) |
 |------------|----------------------------------|
 |      48    |         232.92                   |
-|------------|----------------------------------|
 |      64    |         335.36                   |
-|------------|----------------------------------|
 |      80    |         371.2                    |
-|------------|----------------------------------|
 |      96    |         386.4                    |
--------------------------------------------------
+
 
 The performance improvement from patch size 80 to patch size 96 is small. The reason behind is that the GPU computation is saturated.
