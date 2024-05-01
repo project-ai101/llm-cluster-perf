@@ -23,5 +23,31 @@ repository.
    Total GPU Cost: < $1200
 ```
 
+##### Results
 The performance was tuned from 7.5 tokens/second with patch size 1 to 386.4 tokens/second with batch size 96. 
 For the details of the performance tuning journey, one may refer to [perf_tune_1.md](https://github.com/project-ai101/llm-cluster-perf/blob/main/perf_tune_1.md)
+
+
+### Build A GPU Commodity Cluster to Concurrently Run Multiple LLM Models
+```
+   Timestamp:
+      April 30, 2024
+```
+```
+   AI HPC Cluster Configuration: 
+     2 Linux Servers
+     Four Nvidia RTX 3060 GPU cards, Two Nvidia RTX 4060 TI Super GPU Cards, One Nvidia RTX 4070 TI Super GPU Card.
+     Total GPU VRAM: 96GB 
+```
+
+```
+   Total GPU Cost: < $3000
+```
+
+```
+   LLM Models concurrently running:
+      1 Llama2 7B
+      1 Llama2 13B
+      1 Llama3 8B
+      1 CodeLlama 34B Python
+```
