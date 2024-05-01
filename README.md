@@ -50,4 +50,6 @@ For the details of the performance tuning journey, one may refer to [perf_tune_1
       1 Llama2 13B
       1 Llama3 8B
       1 CodeLlama 34B Python
+
+   Total Required GPU VRAM: >130GB
 ```
