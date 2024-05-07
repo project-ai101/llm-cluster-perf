@@ -36,7 +36,9 @@ For the details of the performance tuning journey, one may refer to [perf_tune_1
 ```
    AI HPC Cluster Configuration: 
      2 Linux Servers
-     Four Nvidia RTX 3060 GPU cards, Two Nvidia RTX 4060 TI Super GPU Cards, One Nvidia RTX 4070 TI Super GPU Card.
+       Four Nvidia RTX 3060 GPU cards,
+       Two Nvidia RTX 4060 TI Super GPU Cards,
+       One Nvidia RTX 4070 TI Super GPU Card.
      Total GPU VRAM: 96GB 
 ```
 
