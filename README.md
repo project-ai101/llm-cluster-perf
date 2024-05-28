@@ -12,10 +12,10 @@ In this tutorial repository, I mainly focus on two topics.
 - Performance data from some small experienment clusters I built.
 
 ## LLM Service Access Framework
-##### LangChain Framework
+#### LangChain Framework
 LangChain is a framework to help developers to develop and deploy LLM based Rest APIs services. It has three pilars, Open-source libraries, Productionization with LanSmith and Deployment with LangServer. For details, one may refer to its [github link](https://github.com/langchain-ai/langchain).
 
-##### Microsoft Semantic-Kernel
+#### Microsoft Semantic-Kernel
 Microsoft semantic-kernel is a lightweight LLM service access framework. It supports C#, Python and Java. It is easy to install and use due to simplicity. The github link is [here](https://github.com/microsoft/semantic-kernel/tree/main)
 
 ## LLM Cluster Performance
@@ -34,7 +34,7 @@ experiments and results.
    Total GPU Cost: < $1200
 ```
 
-##### Results
+#### Results
 The performance was tuned from 7.5 tokens/second with patch size 1 to 386.4 tokens/second with batch size 96. 
 For the details of the performance tuning journey, one may refer to [perf_tune_1.md](https://github.com/project-ai101/llm-cluster-perf/blob/main/perf_tune_1.md)
 
