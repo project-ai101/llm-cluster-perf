@@ -1,5 +1,5 @@
 # LLM Cluster 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Author: Bin Tan
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Author: Bin Tan, [my linkedin](https://www.linkedin.com/in/bin-tan-3145721/)
 
 LLM training, fine-tuning and inference typically involves many servers with tens or even thousands of GPUs. To design a cluster, three layers of works are typically required to be studied,
 
