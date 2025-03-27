@@ -12,11 +12,17 @@ In this tutorial repository, I mainly focus on two topics.
 - Performance data from some small experienment clusters I built.
 
 ## LLM Service Access Framework
+#### Llama-Stack
+[Llama-Stack](https://github.com/meta-llama/llama-stack?tab=readme-ov-file) provides a framework to standardize the building blocks of AI application development.
+
+#### Ollama
+[Ollama](https://ollama.com) is an open source software to run open source LLMs locally, such as, Llama3.3, DeepSeek-R1, Phi-4, Mistral, Gemma 3 and others. Download it from [its github site](https://github.com/ollama/ollama)
+
 #### LangChain Framework
 LangChain is a framework to help developers to develop and deploy LLM based Rest APIs services. It has three pilars, Open-source libraries, Productionization with LanSmith and Deployment with LangServer. For details, one may refer to its [github link](https://github.com/langchain-ai/langchain).
 
 #### Microsoft Semantic-Kernel
-Microsoft semantic-kernel is a lightweight LLM service access framework. It supports C#, Python and Java. It is easy to install and use due to simplicity. The github link is [here](https://github.com/microsoft/semantic-kernel/tree/main)
+Microsoft semantic-kernel is a lightweight LLM service access framework. It supports C#, Python and Java. It is easy to install and use due to simplicity. [The github link](https://github.com/microsoft/semantic-kernel/tree/main)
 
 ## LLM Cluster Performance
 Cluster level LLM training and inference performance experiements. Both LLM training and inference are critical and expansive. Here are some interesting 
